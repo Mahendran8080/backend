@@ -85,6 +85,7 @@ mongoose.connect('mongodb+srv://mahendrancool18:Mahendran123@bookdata.vjitsf2.mo
   .catch(err => {
     console.log('MongoDB not available, using in-memory storage');
     console.log('To use MongoDB, please set up a MongoDB Atlas connection or local MongoDB instance');
+    console.log(err.message);
     isMongoConnected = false;
   });
 
